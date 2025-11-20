@@ -124,12 +124,12 @@ erDiagram
     dim_island_group ||--o{ fact_child_labor : "island_group"
 
 classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff
-classDef poverty fill:#0b3d91,stroke:#062355,color:#ffffff       %% deep blue
-classDef income fill:#008080,stroke:#004c4c,color:#ffffff        %% teal
-classDef education fill:#28a745,stroke:#1c6b2c,color:#ffffff     %% bright green
-classDef health fill:#e94e1b,stroke:#a33612,color:#ffffff        %% vivid orange-red
-classDef labor fill:#6f42c1,stroke:#462d7e,color:#ffffff         %% strong purple
-classDef comm_pat fill:#d4af37,stroke:#8c7a16,color:#000000      %% warm golden yellow (black text)
+classDef poverty fill:#0b3d91,stroke:#062355,color:#ffffff
+classDef income fill:#008080,stroke:#004c4c,color:#ffffff
+classDef education fill:#28a745,stroke:#1c6b2c,color:#ffffff
+classDef health fill:#e94e1b,stroke:#a33612,color:#ffffff
+classDef labor fill:#6f42c1,stroke:#462d7e,color:#ffffff
+classDef comm_pat fill:#d4af37,stroke:#8c7a16,color:#000000
 
 class dim_region_codes dim
 class dim_island_group dim
@@ -275,6 +275,7 @@ class fact_child_labor labor
 |--------|-----------|-------------|------|
 | region | string | Administrative region | Join to region in fact tables. |
 | island | string | Island grouping name | Luzon, Visayas, Mindanao. |
+
 
 
 
