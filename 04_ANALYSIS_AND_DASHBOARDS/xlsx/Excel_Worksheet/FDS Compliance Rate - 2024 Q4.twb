@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2024-2025 (Number of 4Ps Beneficiaries)' inline='true' name='federated.0fh5pbn1ns89hd14lem9z0ei59hv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Number of 4Ps Beneficiaries' name='excel-direct.05zzpj41hntcic188k5ev1ber466'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Charisse/OneDrive/Desktop/FDS Compliance Rate - 2024 Q4.twb Files/Data/Worksheets Used/Number of 4Ps Beneficiaries.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.05zzpj41hntcic188k5ev1ber466' name='2024-2025' table='[&apos;2024-2025$&apos;]' type='table'>
+          <columns gridOrigin='A1:H105:no:A1:H105:0' header='yes' outcome='2'>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='integer' name='Target' ordinal='1' />
+            <column datatype='string' name='Actual' ordinal='2' />
+            <column datatype='string' name='Active HHs Not found in L3' ordinal='3' />
+            <column datatype='string' name='Total Active HHs found in L3' ordinal='4' />
+            <column datatype='string' name='Island' ordinal='5' />
+            <column datatype='string' name='Quarter' ordinal='6' />
+            <column datatype='integer' name='Year' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H105:no:A1:H105:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Actual]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Actual</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active HHs Not found in L3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Active HHs Not found in L3]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Active HHs Not found in L3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Active HHs found in L3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Total Active HHs found in L3]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Total Active HHs found in L3</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Island</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Island]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Island</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[2024-2025]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='2024-2025' datatype='table' name='[__tableau_internal_object_id__].[2024-2025_68EC9D7D40974C42A8FD399216ED0C54]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='2024-2025' id='2024-2025_68EC9D7D40974C42A8FD399216ED0C54'>
+            <properties context=''>
+              <relation connection='excel-direct.05zzpj41hntcic188k5ev1ber466' name='2024-2025' table='[&apos;2024-2025$&apos;]' type='table'>
+                <columns gridOrigin='A1:H105:no:A1:H105:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='integer' name='Target' ordinal='1' />
+                  <column datatype='string' name='Actual' ordinal='2' />
+                  <column datatype='string' name='Active HHs Not found in L3' ordinal='3' />
+                  <column datatype='string' name='Total Active HHs found in L3' ordinal='4' />
+                  <column datatype='string' name='Island' ordinal='5' />
+                  <column datatype='string' name='Quarter' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='2024-Q4 (FDS Compliance Rate Per Region - 2024 Q4)' inline='true' name='federated.164xtyh0g8uwkj10509e40t57s1t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FDS Compliance Rate Per Region - 2024 Q4' name='excel-direct.1nlowob1ydv87k0zr4nr91mnsps8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Charisse/OneDrive/Desktop/FDS Compliance Rate - 2024 Q4.twb Files/Data/OneDrive/FDS Compliance Rate Per Region - 2024 Q4.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1nlowob1ydv87k0zr4nr91mnsps8' name='2024-Q4' table='[&apos;2024-Q4$&apos;]' type='table'>
+          <columns gridOrigin='A1:B18:no:A1:B18:0' header='yes' outcome='6'>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='real' name='Compliance Rate' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2024-Q4]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B18:no:A1:B18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[2024-Q4]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[2024-Q4_711ED3CAB90A4D398047E4B4D92BAAED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Compliance Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Compliance Rate]</local-name>
+            <parent-name>[2024-Q4]</parent-name>
+            <remote-alias>Compliance Rate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[2024-Q4_711ED3CAB90A4D398047E4B4D92BAAED]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Color Code' datatype='boolean' name='[Calculation_1069041966814085121]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Compliance Rate] &gt; 95.0' />
+      </column>
+      <column caption='2024-Q4' datatype='table' name='[__tableau_internal_object_id__].[2024-Q4_711ED3CAB90A4D398047E4B4D92BAAED]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1069041966814085121]' derivation='None' name='[none:Calculation_1069041966814085121:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1069041966814085121:nk]' type='palette'>
+            <map to='#afd6ed'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='2024-Q4' id='2024-Q4_711ED3CAB90A4D398047E4B4D92BAAED'>
+            <properties context=''>
+              <relation connection='excel-direct.1nlowob1ydv87k0zr4nr91mnsps8' name='2024-Q4' table='[&apos;2024-Q4$&apos;]' type='table'>
+                <columns gridOrigin='A1:B18:no:A1:B18:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='real' name='Compliance Rate' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='FDS Bar Graph'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold' fontsize='18'>Family Development Session Completion Rate (2024)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2024-Q4 (FDS Compliance Rate Per Region - 2024 Q4)' name='federated.164xtyh0g8uwkj10509e40t57s1t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.164xtyh0g8uwkj10509e40t57s1t'>
+            <column caption='Color Code' datatype='boolean' name='[Calculation_1069041966814085121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Compliance Rate] &gt; 95.0' />
+            </column>
+            <column datatype='real' name='[Compliance Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1069041966814085121]' derivation='None' name='[none:Calculation_1069041966814085121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Compliance Rate]' derivation='Sum' name='[sum:Compliance Rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.164xtyh0g8uwkj10509e40t57s1t].[sum:Compliance Rate:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[sum:Compliance Rate:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[sum:Compliance Rate:qk]' value='n#,##0.0&quot;%&quot;;-#,##0.0&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]' value='Tableau Medium' />
+            <format attr='font-size' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]' value='10' />
+            <format attr='font-weight' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]' value='bold' />
+            <format attr='color' field='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]' value='#555555' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Tableau Medium' />
+            <format attr='color' value='#555555' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='text-orientation' id='refline0' value='0' />
+            <format attr='wrap' id='refline0' value='off' />
+            <format attr='text-align' id='refline0' value='right' />
+            <format attr='vertical-align' id='refline0' value='bottom' />
+            <format attr='color' id='refline0' value='#c14b4d' />
+            <format attr='font-size' id='refline0' value='10' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='stroke-color' id='refline0' value='#c14b4de7' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Calculation_1069041966814085121:nk]' />
+              <text column='[federated.164xtyh0g8uwkj10509e40t57s1t].[sum:Compliance Rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]</rows>
+        <cols>[federated.164xtyh0g8uwkj10509e40t57s1t].[sum:Compliance Rate:qk]</cols>
+      </table>
+      <simple-id uuid='{31F6AAC7-DCE9-4CF0-9829-EE60EDEBEFD9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='FDS Bar Graph'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Calculation_1069041966814085121:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Calculation_1069041966814085121:nk]</field>
+            <field>[federated.164xtyh0g8uwkj10509e40t57s1t].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{23EC149F-A4F5-4021-9E46-623141F47EE7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='FDS Bar Graph' width='192'>
+      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
+      2r8AF4n38LJQBIMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
