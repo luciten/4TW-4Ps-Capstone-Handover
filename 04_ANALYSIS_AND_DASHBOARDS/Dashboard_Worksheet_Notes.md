@@ -32,7 +32,7 @@ HOW TO READ THE DASHBOARD/WORKSHEET:
    2. For deeper analysis, open the Excel file for that focus area (links embedded).
 
 CAVEATS:
-      * All dashboards are static (Excel-only, no interactivity).
-      * Different datasets came from different years.
-      * Some 4Ps Quarter reports are missing/incomplete.
-      * Some regions had missing/incomplete reports.
+      - All dashboards are static (Excel-only, no interactivity).
+      - Different datasets came from different years.
+      - Some 4Ps Quarter reports are missing/incomplete.
+      - Some regions had missing/incomplete reports.
