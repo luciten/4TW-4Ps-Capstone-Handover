@@ -1,0 +1,54 @@
+# 4Ps Regional Performance and Intervention Analysis  
+## Project Overview
+
+### *Problem & Context*
+
+The Pantawid Pamilyang Pilipino Program (4Ps) is a key poverty reduction initiative, but regional impacts vary. Some areas show steady improvements, while others lag despite high coverage, highlighting differences in local conditions, service access, and socioeconomic constraints.
+
+
+
+### *Business Question*
+
+**Which regions perform weakest across 4Ps outcomes, and what targeted interventions can strengthen impact?**
+
+
+
+### *Intended Stakeholders*
+
+Government and policy decision-makers, including DSWD, LGUs, and planning/social welfare officers, who need reliable diagnostics and actionable insights for region-specific interventions.
+
+
+
+### *Data & Approach*
+
+The analysis draws on multiple datasets from government sources, including PSA surveys, DSWD quarterly reports, and DepEd enrollment statistics. Key data points cover Health and Nutrition indicators (e.g., immunization rates, prenatal visits), Education outcomes (net enrollment rates by grade level), Child Labor measures (total working children, proportion of working children), and Community Participation metrics (FDS attendance compliance). These datasets vary in format, including CSV, XLSX, and PDF files, and span different years, which requires careful alignment and preprocessing before analysis.
+
+Our data pipeline is designed to streamline collection, transformation, and visualization. Raw data is first ingested from source files and scraped PDFs using automated Python scripts. The data is then transformed and cleaned using dbt to create structured tables. The processed tables are stored centrally in ClickHouse and can be accessed in Google Sheets via App Script. This workflow ensures that our analysts can explore trends, compare regional performance across 4Ps indicators, and generate evidence-based recommendations.
+
+
+### *Key Insights*
+
+BARMM and neighboring regions show the lowest health and nutrition performance, particularly immunization and prenatal visits. Education outcomes vary widely, with most regions at 70–80% enrollment, but BARMM remains far behind. Child labor persists in vulnerable areas like Region X, and FDS attendance for community participation often falls short of the 95% target. The repeated low performance across domains indicates systemic local barriers despite 4Ps coverage.
+
+
+
+### *Key Recommendations (Intervention Table)*
+
+Focus on regions consistently underperforming across multiple indicators. Evidence-based, region-specific interventions can complement 4Ps efforts and enhance overall program impact.
+
+
+| **Region** | **Key Gaps** | **Underlying Issues** | **Strategic Intervention** |
+|-----------|--------------|------------------------|-----------------------------|
+| **III – Central Luzon** | Community Participation | • Informal settlements<br>• High mobility and migration<br>• Unstable employment | • “FDS Anywhere” Mobile Program and Barangay Pop-Ups<br>• FDS Participation Policy with employers |
+| **IV-A – CALABARZON** | Child Labor and Community Participation | • Urban time poverty<br>• Industrial zone pressure | • Youth Workshield Monitoring<br>• Shift-Safe Leave Program |
+| **V – Bicol Region** | Prenatal, Education, Child Labor, Community Participation | • Disaster-driven instability<br>• Island isolation | • Portable Health & Learning Pods<br>• Island Reach Boat Clinics & Learning Boats<br>• Post-Disaster Child Safety Network |
+| **VI – Western Visayas** | Child Labor | • Rural poverty | • Farm-to-Classroom Income Diversion Program<br>• Seasonal Youth Support Scholarships |
+| **VII – Central Visayas** | Immunization, Prenatal, Child Labor | • Urban–rural disparities<br>• Vaccine hesitancy<br>• Hospital-centric services<br>• Health manpower gaps | • Barangay Health-On-Wheels<br>• Community Health Aide Expansion & Child Safety Monitoring |
+| **VIII – Eastern Visayas** | Education, Child Labor | • Disaster recovery burden<br>• Poverty-induced child labor | • Embed child labor prevention in disaster recovery with school re-entry incentives, psychosocial support, and conditional education grants |
+| **IX – Zamboanga Peninsula** | Immunization, Prenatal, Education | • Geographic isolation<br>• Cultural barriers<br>• Conflict zones | • Co-develop services with peace networks and cultural mediators |
+| **X – Northern Mindanao** | Immunization, Prenatal, Child Labor | • Farm work<br>• Dispersed communities<br>• Health worker shortages | • Farm-based learning centers with rotating para-health teams |
+| **XI – Davao Region** | Immunization and Prenatal | • Poverty-driven labor<br>• Few health workers | • Community health scholarships tied to barangay service |
+| **BARMM** | Immunization, Prenatal, Education | • Conflict and displacement<br>• Cultural hesitancy | • Faith-based health dialogues, mobile caravans, culturally adapted services |
+
+
+
