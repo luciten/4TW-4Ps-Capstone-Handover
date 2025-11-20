@@ -120,18 +120,18 @@ erDiagram
     dim_island_group ||--o{ fact_immunization_2022 : island
     dim_island_group ||--o{ fact_child_labor : island_group
 
-classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff;
-classDef poverty fill:#1f77b4,stroke:#0d3349,color:#ffffff;
-classDef income fill:#3a93d9,stroke:#185a8a,color:#ffffff;
-classDef education fill:#2ca02c,stroke:#165c16,color:#ffffff;
-classDef health fill:#ff8c1a,stroke:#a85800,color:#ffffff;
-classDef labor fill:#a64ca6,stroke:#6a2e6a,color:#ffffff;
-classDef comm_pat fill:#d95f02,stroke:#823800,color:#ffffff;
+classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff
+classDef poverty fill:#1f77b4,stroke:#0d3349,color:#ffffff
+classDef income fill:#3a93d9,stroke:#185a8a,color:#ffffff
+classDef education fill:#2ca02c,stroke:#165c16,color:#ffffff
+classDef health fill:#ff8c1a,stroke:#a85800,color:#ffffff
+classDef labor fill:#a64ca6,stroke:#6a2e6a,color:#ffffff
+classDef comm_pat fill:#d95f02,stroke:#823800,color:#ffffff
 
-class dim_region_codes dim;
-class dim_island_group dim;
-class fact_fds_attendance comm_pat;
-class fact_net_enrollment_rate education;
+class dim_region_codes dim
+class dim_island_group dim
+class fact_fds_attendance comm_pat
+class fact_net_enrollment_rate education
 ```
 
 ---
@@ -269,6 +269,7 @@ class fact_net_enrollment_rate education;
 |--------|-----------|-------------|------|
 | region | string | Administrative region | Join to region in fact tables. |
 | island | string | Island grouping name | Luzon, Visayas, Mindanao. |
+
 
 
 
