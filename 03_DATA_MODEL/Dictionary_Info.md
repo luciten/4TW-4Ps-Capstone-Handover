@@ -12,6 +12,7 @@ This section documents all final analytical tables prepared for Tableau. Each sh
 
 ```mermaid
 erDiagram
+    %% ========= DIMENSIONS =========
     dim_region_codes {
         string RegionCode PK
         string region
@@ -23,6 +24,7 @@ erDiagram
         string island PK
     }
 
+    %% ========= FACT TABLES =========
     fact_poverty_incidence {
         string Region FK
         int Year FK
@@ -36,6 +38,15 @@ erDiagram
         int Year
         float average_annual_family_income_thousands
         int d_region_order
+    }
+
+    fact_4ps_beneficiaries {
+        string region FK
+        string quarter FK
+        int year FK
+        string island FK
+        int target
+        int actual
     }
 
     fact_fds_attendance {
@@ -56,15 +67,6 @@ erDiagram
         float Grades1to6_pct
         float Junior_High_School_pct
         float Senior_High_School_pct
-    }
-
-    fact_4ps_beneficiaries {
-        string region FK
-        string quarter FK
-        int year FK
-        string island FK
-        int target
-        int actual
     }
 
     fact_prenatal_postnatal_2022 {
@@ -104,21 +106,22 @@ erDiagram
         float prop_working
     }
 
-    dim_region_codes ||--o{ fact_poverty_incidence : region
-    dim_region_codes ||--o{ fact_ave_income_per_region : region
-    dim_region_codes ||--o{ fact_4ps_beneficiaries : region
-    dim_region_codes ||--o{ fact_fds_attendance : region
-    dim_region_codes ||--o{ fact_net_enrollment_rate : region
-    dim_region_codes ||--o{ fact_prenatal_postnatal_2022 : region
-    dim_region_codes ||--o{ fact_immunization_2022 : region
-    dim_region_codes ||--o{ fact_child_labor : region_name
+    %% ========= RELATIONSHIPS =========
+    dim_region_codes ||--o{ fact_poverty_incidence : "region"
+    dim_region_codes ||--o{ fact_ave_income_per_region : "region"
+    dim_region_codes ||--o{ fact_4ps_beneficiaries : "region"
+    dim_region_codes ||--o{ fact_fds_attendance : "region"
+    dim_region_codes ||--o{ fact_net_enrollment_rate : "region"
+    dim_region_codes ||--o{ fact_prenatal_postnatal_2022 : "region"
+    dim_region_codes ||--o{ fact_immunization_2022 : "region"
+    dim_region_codes ||--o{ fact_child_labor : "region"
 
-    dim_island_group ||--o{ fact_ave_income_per_region : island_group
-    dim_island_group ||--o{ fact_4ps_beneficiaries : island
-    dim_island_group ||--o{ fact_net_enrollment_rate : Island_Group
-    dim_island_group ||--o{ fact_prenatal_postnatal_2022 : island_group
-    dim_island_group ||--o{ fact_immunization_2022 : island
-    dim_island_group ||--o{ fact_child_labor : island_group
+    dim_island_group ||--o{ fact_ave_income_per_region : "island_group"
+    dim_island_group ||--o{ fact_4ps_beneficiaries : "island"
+    dim_island_group ||--o{ fact_net_enrollment_rate : "Island_Group"
+    dim_island_group ||--o{ fact_prenatal_postnatal_2022 : "island_group"
+    dim_island_group ||--o{ fact_immunization_2022 : "island"
+    dim_island_group ||--o{ fact_child_labor : "island_group"
 
 classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff
 classDef poverty fill:#1f77b4,stroke:#0d3349,color:#ffffff
@@ -132,6 +135,9 @@ class dim_region_codes dim
 class dim_island_group dim
 class fact_fds_attendance comm_pat
 class fact_net_enrollment_rate education
+class fact_prenatal_postnatal_2022 health
+class fact_immunization_2022 health
+class fact_child_labor labor
 ```
 
 ---
@@ -269,6 +275,7 @@ class fact_net_enrollment_rate education
 |--------|-----------|-------------|------|
 | region | string | Administrative region | Join to region in fact tables. |
 | island | string | Island grouping name | Luzon, Visayas, Mindanao. |
+
 
 
 
