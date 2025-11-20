@@ -745,8 +745,10 @@ final_df
 ```bash
 # Build models and run tests
 docker compose --profile jobs run --rm dbt build --profiles-dir . --target remote
-
+```
 - For testing only, run the ff:
+```bash
 # Run tests only
 docker compose --profile jobs run --rm dbt test --profiles-dir . --target remote
 ```
+
