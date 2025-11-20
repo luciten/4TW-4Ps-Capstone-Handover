@@ -10,7 +10,7 @@ This section documents all final analytical tables prepared for Tableau. Each sh
 - **Dimension Tables**: Standardized descriptive attributes for aggregation and joins.  
 - **Join Keys**: `region` or `RegionCode` used across fact tables.
 
-[insert]
+![Schema_ERD](03_DATA_MODEL/Schema_ERD.png)
 
 ---
 
@@ -147,3 +147,4 @@ This section documents all final analytical tables prepared for Tableau. Each sh
 |--------|-----------|-------------|------|
 | region | string | Administrative region | Join to region in fact tables. |
 | island | string | Island grouping name | Luzon, Visayas, Mindanao. |
+
