@@ -11,23 +11,7 @@ This section documents all final analytical tables prepared for Tableau. Each sh
 - **Join Keys**: `region` or `RegionCode` used across fact tables.
 
 ```mermaid
-%% ===========================
-%%      STYLE DEFINITIONS
-%% ===========================
-%% Colors use Mermaid classDefs
-classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff;
-classDef poverty fill:#1f77b4,stroke:#0d3349,color:#ffffff;         %% Blue
-classDef income fill:#3a93d9,stroke:#185a8a,color:#ffffff;          %% Light Blue
-classDef education fill:#2ca02c,stroke:#165c16,color:#ffffff;       %% Green
-classDef health fill:#ff8c1a,stroke:#a85800,color:#ffffff;          %% Orange
-classDef labor fill:#a64ca6,stroke:#6a2e6a,color:#ffffff;           %% Purple
-classDef comm_pat fill:#d95f02,stroke:#823800,color:#ffffff;        %% Dark Orange / Brownish
-
-%% ==========================================================
-%%                    DIMENSIONS (Base Tables)
-%% ==========================================================
 erDiagram
-
     dim_region_codes {
         string RegionCode PK
         string region
@@ -38,15 +22,6 @@ erDiagram
         string region PK
         string island PK
     }
-
-%% Apply styling
-class dim_region_codes dim;
-class dim_island_group dim;
-
-
-%% ==========================================================
-%%                    SOCIOECONOMIC / POVERTY
-%% ==========================================================
 
     fact_poverty_incidence {
         string Region FK
@@ -62,12 +37,6 @@ class dim_island_group dim;
         float average_annual_family_income_thousands
         int d_region_order
     }
-
-%% No class applied here (no group)
-
-%% ==========================================================
-%%                    EDUCATION THEME
-%% ==========================================================
 
     fact_fds_attendance {
         string region FK
@@ -98,15 +67,6 @@ class dim_island_group dim;
         int actual
     }
 
-class fact_fds_attendance comm_pat;
-class fact_net_enrollment_rate education;
-%% fact_4ps_beneficiaries no class applied (no group)
-
-
-%% ==========================================================
-%%                    HEALTH THEME
-%% ==========================================================
-
     fact_prenatal_postnatal_2022 {
         string region
         string island_group
@@ -135,14 +95,6 @@ class fact_net_enrollment_rate education;
         int measles_2_count
     }
 
-class fact_prenatal_postnatal_2022 health;
-class fact_immunization_2022 health;
-
-
-%% ==========================================================
-%%                    LABOR THEME
-%% ==========================================================
-
     fact_child_labor {
         string region_name FK
         int year FK
@@ -151,13 +103,6 @@ class fact_immunization_2022 health;
         int working_children
         float prop_working
     }
-
-class fact_child_labor labor;
-
-
-%% ==========================================================
-%%                    RELATIONSHIPS
-%% ==========================================================
 
     dim_region_codes ||--o{ fact_poverty_incidence : region
     dim_region_codes ||--o{ fact_ave_income_per_region : region
@@ -174,6 +119,19 @@ class fact_child_labor labor;
     dim_island_group ||--o{ fact_prenatal_postnatal_2022 : island_group
     dim_island_group ||--o{ fact_immunization_2022 : island
     dim_island_group ||--o{ fact_child_labor : island_group
+
+classDef dim fill:#2f2f2f,stroke:#ffffff,color:#ffffff;
+classDef poverty fill:#1f77b4,stroke:#0d3349,color:#ffffff;
+classDef income fill:#3a93d9,stroke:#185a8a,color:#ffffff;
+classDef education fill:#2ca02c,stroke:#165c16,color:#ffffff;
+classDef health fill:#ff8c1a,stroke:#a85800,color:#ffffff;
+classDef labor fill:#a64ca6,stroke:#6a2e6a,color:#ffffff;
+classDef comm_pat fill:#d95f02,stroke:#823800,color:#ffffff;
+
+class dim_region_codes dim;
+class dim_island_group dim;
+class fact_fds_attendance comm_pat;
+class fact_net_enrollment_rate education;
 ```
 
 ---
@@ -311,6 +269,7 @@ class fact_child_labor labor;
 |--------|-----------|-------------|------|
 | region | string | Administrative region | Join to region in fact tables. |
 | island | string | Island grouping name | Luzon, Visayas, Mindanao. |
+
 
 
 
