@@ -18,14 +18,12 @@ For setting up a Linux environment on Windows machines and running other tools (
 * Install here: learn.microsoft.com/en-us/windows/wsl/install
 * Quick install by running this command in Windows Powershell as Admin:
 
-wsl --install
-
+wsl --install
 * Once rebooted, open Ubuntu from Start Menu and set a username/password
 * Update base system by running this command in WSL (Ubuntu):
 
 
-sudo apt update && sudo apt upgrade -y
-
+sudo apt update && sudo apt upgrade -y
 Python
 For running ingestion scripts and data extraction
 * If not yet installed, go to python.org/downloads
@@ -33,20 +31,20 @@ For running ingestion scripts and data extraction
 * Installing through Linux (Ubuntu/Debian)
 
 
-sudo apt update
+sudo apt update
 sudo apt install -y python3 python3-venv python3-pip
 python3 --version
 
 * Installing through Homebrew (macOS)
 
 
-brew install python
+brew install python
 python3 --version
 
 * Verify installation by running the following command on shell:
 
 
-python --version
+python --version
 
 * Recommendation: Create a virtual environment (venv or uv) on your machine. Doing so ensures:
    * Consistent package versions
@@ -59,29 +57,28 @@ For cloning project repository
 * Install through Linux (Ubuntu/Debian) then verify
 
 
-sudo apt install git -y
+sudo apt install git -y
 git --version
 
 * Install through Homebrew (macOS) then verify
 
 
-brew install git
+brew install git
 git --version
 
 * Configure Git (name, email, default branch, line endings)
 
 
-  git config --global user.name "Your Name"
+git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 git config --global init.defaultBranch main
 git config --global pull.rebase false
 git config --global core.autocrlf input   # macOS/Linux
+
 # On Windows (PowerShell): git config --global core.autocrlf true
-
+
 * Clone the repository
-
-
-git clone https://github.com/luciten/ftw-de-capstone-project.git
+git clone https://github.com/luciten/ftw-de-capstone-project.git
 cd ftw-de-capstone-project
 
 Docker
@@ -91,14 +88,12 @@ For running containerized services such as ClickHouse (DB) and Metabase
 * For WSL (Ubuntu), go to Docker Desktop > Settings > Resources > WSL integration, Ubuntu distro to be toggled ON
 * Verify connection:
 
+docker run hello-world
 
-docker run hello-world
-
 * If not installing Docker Desktop, next option is running Native Docker Engine inside WSL
 * Enable systemd in WSL:
 
-
-sudo tee /etc/wsl.conf >/dev/null <<'EOF'
+sudo tee /etc/wsl.conf >/dev/null <<'EOF'
 [boot]
 systemd=true
 EOF
@@ -106,12 +101,12 @@ EOF
 * Then in Windows Powershell:
 
 
-wsl --shutdown
+wsl --shutdown
 
 * Reopen WSL (Ubuntu), and install Docker Engine
 
 
-# prerequisites
+# prerequisites
 sudo apt install -y ca-certificates curl gnupg
 
 
