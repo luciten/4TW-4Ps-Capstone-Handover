@@ -28,8 +28,9 @@ Our data pipeline is designed to streamline collection, transformation, and visu
 
 ### *Key Insights*
 
-BARMM and neighboring regions show the lowest health and nutrition performance, particularly immunization and prenatal visits. Education outcomes vary widely, with most regions at 70–80% enrollment, but BARMM remains far behind. Child labor persists in vulnerable areas like Region X, and FDS attendance for community participation often falls short of the 95% target. The repeated low performance across domains indicates systemic local barriers despite 4Ps coverage.
-
+- Health and nutrition challenges are highest in BARMM and nearby regions, despite many 4Ps beneficiaries.
+- Education and enrollment gaps persist in BARMM and some high-4Ps regions.
+- Child labor and low community participation continue in vulnerable regions, which highlight persistent local barriers.
 
 
 ### *Key Recommendations (Intervention Table)*
@@ -49,6 +50,7 @@ Focus on regions consistently underperforming across multiple indicators. Eviden
 | **X – Northern Mindanao** | Immunization, Prenatal, Child Labor | • Farm work<br>• Dispersed communities<br>• Health worker shortages | • Farm-based learning centers with rotating para-health teams |
 | **XI – Davao Region** | Immunization and Prenatal | • Poverty-driven labor<br>• Few health workers | • Community health scholarships tied to barangay service |
 | **BARMM** | Immunization, Prenatal, Education | • Conflict and displacement<br>• Cultural hesitancy | • Faith-based health dialogues, mobile caravans, culturally adapted services |
+
 
 
 
